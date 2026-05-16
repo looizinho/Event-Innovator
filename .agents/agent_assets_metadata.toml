@@ -1,0 +1,38 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "9087Qrk982kYuOkoOroAq"
+uri = "file://artifacts/portfolio/src/assets/hero-bg.png"
+type = "image"
+title = "Live event laser lighting show"
+
+[[generated]]
+id = "3OlrcPkKRqRaAqs9lRgrz"
+uri = "file://artifacts/portfolio/src/assets/project-1.png"
+type = "image"
+title = "Immersive light art installation"
+
+[[generated]]
+id = "ZB0DeejI0rLIextzRFUAh"
+uri = "file://artifacts/portfolio/src/assets/project-2.png"
+type = "image"
+title = "Corporate event massive LED wall"
+
+[[generated]]
+id = "jjSIiOWhccf0dMH4pOioO"
+uri = "file://artifacts/portfolio/src/assets/project-3.png"
+type = "image"
+title = "Projection mapping on architecture"
+
+[[generated]]
+id = "_521HGuePiP7n24tDVQ0i"
+uri = "file://artifacts/portfolio/src/assets/project-4.png"
+type = "image"
+title = "Custom AV control software interface"
+
+[[generated]]
+id = "JT-bA53edSgF1x24MAmzK"
+uri = "file://artifacts/portfolio/src/assets/about-studio.png"
+type = "image"
+title = "AV control room studio"
