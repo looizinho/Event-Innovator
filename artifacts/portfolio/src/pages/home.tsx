@@ -23,11 +23,11 @@ function NavBar() {
         SYS.CTRL // K.V.
       </div>
       <nav className="hidden md:flex items-center gap-8 font-mono text-xs tracking-widest text-muted-foreground uppercase">
-        <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
+        <a href="#projects" className="hover:text-primary transition-colors">Projetos</a>
         <a href="#skills" className="hover:text-primary transition-colors">Stack</a>
-        <a href="#services" className="hover:text-primary transition-colors">Services</a>
-        <a href="#about" className="hover:text-primary transition-colors">About</a>
-        <a href="#contact" className="text-primary border border-primary/30 px-4 py-2 hover:bg-primary hover:text-primary-foreground transition-all">Engage</a>
+        <a href="#services" className="hover:text-primary transition-colors">Serviços</a>
+        <a href="#about" className="hover:text-primary transition-colors">Sobre</a>
+        <a href="#contact" className="text-primary border border-primary/30 px-4 py-2 hover:bg-primary hover:text-primary-foreground transition-all">Contato</a>
       </nav>
     </motion.header>
   );
@@ -48,7 +48,7 @@ function Hero() {
         transition={{ duration: 2, ease: "easeOut" }}
       >
         <div className="absolute inset-0 bg-background/80" />
-        <img src={heroBg} alt="Live event stage" className="w-full h-full object-cover mix-blend-screen opacity-50" />
+        <img src={heroBg} alt="Palco de evento ao vivo" className="w-full h-full object-cover mix-blend-screen opacity-50" />
       </motion.div>
 
       <div className="relative z-10 max-w-5xl">
@@ -58,7 +58,7 @@ function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="flex items-center gap-3 mb-6"
         >
-          <span className="font-mono text-xs text-primary uppercase tracking-widest">System Online</span>
+          <span className="font-mono text-xs text-primary uppercase tracking-widest">Sistema Online</span>
         </motion.div>
         
         <motion.h1 
@@ -67,11 +67,11 @@ function Hero() {
           transition={{ delay: 0.7, duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="text-5xl md:text-7xl xl:text-8xl font-bold tracking-tighter leading-[1.1] text-foreground"
         >
-          ENGINEERING THE <br/>
+          ENGENHARIA DA <br/>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
-            INVISIBLE MAGIC
+            MAGIA INVISÍVEL
           </span> <br/>
-          OF LIVE EVENTS.
+          DOS EVENTOS AO VIVO.
         </motion.h1>
 
         <motion.p 
@@ -80,8 +80,8 @@ function Hero() {
           transition={{ delay: 1, duration: 1 }}
           className="mt-8 max-w-2xl text-lg md:text-xl text-muted-foreground font-light"
         >
-          Audiovisual technology & creative applications for massive scale.
-          Where code meets the arena.
+          Tecnologia audiovisual e aplicações criativas para operações em grande escala.
+          Onde o código encontra a arena.
         </motion.p>
       </div>
 
@@ -91,7 +91,7 @@ function Hero() {
         transition={{ delay: 1.5, duration: 1 }}
         className="absolute bottom-8 right-6 md:right-12 xl:right-24 flex flex-col items-center gap-4"
       >
-        <span className="font-mono text-[10px] text-muted-foreground rotate-90 origin-right translate-x-3 translate-y-6">SCROLL</span>
+        <span className="font-mono text-[10px] text-muted-foreground rotate-90 origin-right translate-x-3 translate-y-6">ROLE</span>
         <div className="w-[1px] h-16 bg-muted relative overflow-hidden mt-8">
           <motion.div 
             className="absolute top-0 left-0 w-full h-1/2 bg-primary"
@@ -107,30 +107,30 @@ function Hero() {
 const projects = [
   {
     title: "LUMINA KINETIC",
-    type: "Immersive Light Installation",
+    type: "Instalação de Luz Imersiva",
     image: project1,
-    desc: "A 500-tube LED installation reacting in real-time to crowd movement via computer vision and custom node-based control software.",
+    desc: "Uma instalação de LED com 500 tubos reagindo em tempo real ao movimento do público por meio de computer vision e software de controle customizado baseado em nodes.",
     tech: ["TouchDesigner", "C++", "DMX/Art-Net", "OpenCV"]
   },
   {
     title: "NEXUS SUMMIT 2024",
-    type: "Corporate Mainstage",
+    type: "Palco Principal Corporativo",
     image: project2,
-    desc: "Data-driven generative visuals spanning a 120ft ultra-widescreen LED wall, synchronized with keynote speaker cues.",
+    desc: "Visuais generativos orientados por dados em um LED wall ultra-wide de 120 pés, sincronizados com as cues dos keynote speakers.",
     tech: ["Notch", "Unreal Engine", "OSC", "Resolume"]
   },
   {
     title: "BRUTALIST ECHOES",
-    type: "Architectural Mapping",
+    type: "Mapping Arquitetural",
     image: project3,
-    desc: "Large-scale 3D projection mapping on urban architecture, exploring cyberpunk themes through optical illusions.",
+    desc: "Projection mapping 3D em larga escala sobre arquitetura urbana, explorando temas cyberpunk por meio de ilusões ópticas.",
     tech: ["MadMapper", "Cinema4D", "After Effects", "Node.js"]
   },
   {
     title: "SHOWKONTROL",
-    type: "Custom Control Software",
+    type: "Software de Controle Customizado",
     image: project4,
-    desc: "Bespoke timeline and mixing software built for a world-touring DJ, unifying lighting, lasers, and video into a single interface.",
+    desc: "Software sob medida de timeline e mixing criado para um DJ em turnê mundial, unificando iluminação, lasers e vídeo em uma única interface.",
     tech: ["React", "Electron", "WebSockets", "MIDI"]
   }
 ];
@@ -144,10 +144,10 @@ function Projects() {
             <h2 className="text-sm font-mono text-primary mb-4 flex items-center gap-2">
               <Terminal className="w-4 h-4" /> 01 // SELECTED_WORKS
             </h2>
-            <h3 className="text-4xl md:text-5xl font-bold tracking-tight">Signal to Screen.</h3>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight">Do Sinal à Tela.</h3>
           </div>
           <p className="max-w-md text-muted-foreground text-sm">
-            From low-level protocol engineering to massive front-of-house visual execution.
+            Da engenharia de protocolos de baixo nível à execução visual massiva de front-of-house.
           </p>
         </div>
 
@@ -213,8 +213,8 @@ function Skills() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-border pt-12">
           
           <div className="space-y-6">
-            <h3 className="text-xl font-bold">AV Systems & Routing</h3>
-            <p className="text-muted-foreground text-sm">Designing robust, zero-latency networks for massive data streams.</p>
+            <h3 className="text-xl font-bold">Sistemas de AV e Roteamento</h3>
+            <p className="text-muted-foreground text-sm">Projetando redes robustas, com latência zero, para fluxos massivos de dados.</p>
             <ul className="space-y-3 font-mono text-sm">
               <li className="flex justify-between border-b border-border/50 pb-2"><span>DMX / Art-Net</span><span className="text-primary">95%</span></li>
               <li className="flex justify-between border-b border-border/50 pb-2"><span>OSC / MIDI</span><span className="text-primary">98%</span></li>
@@ -224,24 +224,24 @@ function Skills() {
           </div>
 
           <div className="space-y-6">
-            <h3 className="text-xl font-bold">Real-time Generation</h3>
-            <p className="text-muted-foreground text-sm">Creating performant, reactive visuals that run at 60fps+ under pressure.</p>
+            <h3 className="text-xl font-bold">Geração em Tempo Real</h3>
+            <p className="text-muted-foreground text-sm">Criando visuais performáticos e reativos que rodam a 60fps+ sob pressão.</p>
             <ul className="space-y-3 font-mono text-sm">
-              <li className="flex justify-between border-b border-border/50 pb-2"><span>TouchDesigner</span><span className="text-primary">Expert</span></li>
-              <li className="flex justify-between border-b border-border/50 pb-2"><span>Notch</span><span className="text-primary">Advanced</span></li>
-              <li className="flex justify-between border-b border-border/50 pb-2"><span>Unreal Engine</span><span className="text-primary">Intermediate</span></li>
-              <li className="flex justify-between border-b border-border/50 pb-2"><span>Resolume Arena</span><span className="text-primary">Expert</span></li>
+              <li className="flex justify-between border-b border-border/50 pb-2"><span>TouchDesigner</span><span className="text-primary">Especialista</span></li>
+              <li className="flex justify-between border-b border-border/50 pb-2"><span>Notch</span><span className="text-primary">Avançado</span></li>
+              <li className="flex justify-between border-b border-border/50 pb-2"><span>Unreal Engine</span><span className="text-primary">Intermediário</span></li>
+              <li className="flex justify-between border-b border-border/50 pb-2"><span>Resolume Arena</span><span className="text-primary">Especialista</span></li>
             </ul>
           </div>
 
           <div className="space-y-6">
             <h3 className="text-xl font-bold">Creative Coding</h3>
-            <p className="text-muted-foreground text-sm">Building custom tools, interfaces, and bridges when off-the-shelf fails.</p>
+            <p className="text-muted-foreground text-sm">Construindo ferramentas, interfaces e integrações customizadas quando o software pronto não resolve.</p>
             <ul className="space-y-3 font-mono text-sm">
-              <li className="flex justify-between border-b border-border/50 pb-2"><span>Node.js / React</span><span className="text-primary">Advanced</span></li>
-              <li className="flex justify-between border-b border-border/50 pb-2"><span>C++ / openFrameworks</span><span className="text-primary">Intermediate</span></li>
-              <li className="flex justify-between border-b border-border/50 pb-2"><span>Python</span><span className="text-primary">Intermediate</span></li>
-              <li className="flex justify-between border-b border-border/50 pb-2"><span>GLSL / Shaders</span><span className="text-primary">Advanced</span></li>
+              <li className="flex justify-between border-b border-border/50 pb-2"><span>Node.js / React</span><span className="text-primary">Avançado</span></li>
+              <li className="flex justify-between border-b border-border/50 pb-2"><span>C++ / openFrameworks</span><span className="text-primary">Intermediário</span></li>
+              <li className="flex justify-between border-b border-border/50 pb-2"><span>Python</span><span className="text-primary">Intermediário</span></li>
+              <li className="flex justify-between border-b border-border/50 pb-2"><span>GLSL / Shaders</span><span className="text-primary">Avançado</span></li>
             </ul>
           </div>
 
@@ -254,20 +254,20 @@ function Skills() {
 function Services() {
   const services = [
     {
-      title: "Interactive System Design",
-      desc: "Architecting the logic and physical layout for sensors, cameras, and triggers that allow crowds to manipulate their environment in real-time."
+      title: "Design de Sistemas Interativos",
+      desc: "Arquitetura da lógica e do layout físico de sensores, câmeras e triggers que permitem ao público manipular o ambiente em tempo real."
     },
     {
-      title: "Generative Content Creation",
-      desc: "Programming data-driven visual content using TouchDesigner and Notch that reacts dynamically to music, data feeds, or environment."
+      title: "Criação de Conteúdo Generativo",
+      desc: "Programação de conteúdo visual orientado por dados com TouchDesigner e Notch, reagindo dinamicamente à música, a data feeds ou ao ambiente."
     },
     {
-      title: "Custom Show Control",
-      desc: "Developing bespoke software (React/Electron/Node) to unify disparate hardware into a single intuitive UI for front-of-house operators."
+      title: "Show Control Customizado",
+      desc: "Desenvolvimento de software sob medida (React/Electron/Node) para unificar hardwares distintos em uma UI única e intuitiva para operadores de front-of-house."
     },
     {
-      title: "Technical Direction",
-      desc: "Overseeing the technical execution of massive AV deployments, ensuring networking, power, and signal flow perform flawlessly under pressure."
+      title: "Direção Técnica",
+      desc: "Supervisão da execução técnica de grandes operações de AV, garantindo que networking, energia e fluxo de sinal funcionem sem falhas sob pressão."
     }
   ];
 
@@ -314,7 +314,7 @@ function About() {
           transition={{ duration: 0.8 }}
           className="relative aspect-square md:aspect-[4/5] bg-muted overflow-hidden"
         >
-          <img src={aboutStudio} alt="AV Control Studio" className="w-full h-full object-cover" />
+          <img src={aboutStudio} alt="Estúdio de controle AV" className="w-full h-full object-cover" />
           <div className="absolute inset-0 border border-primary/20 mix-blend-overlay" />
           
           {/* Tech overlay decorations */}
@@ -332,29 +332,29 @@ function About() {
             <Radio className="w-4 h-4" /> 04 // PHILOSOPHY
           </h2>
           <h3 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
-            The best technology is felt, not seen.
+            A melhor tecnologia é sentida, não exibida.
           </h3>
           
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              I sit at the intersection of rigorous systems engineering and creative expression. In the live event space, there are no second takes. The code must compile, the packets must route, and the lights must hit exactly on the downbeat.
+              Atuo na interseção entre engenharia de sistemas rigorosa e expressão criativa. No universo dos eventos ao vivo, não existe segunda tomada. O código precisa compilar, os packets precisam ser roteados e as luzes precisam entrar exatamente no downbeat.
             </p>
             <p>
-              For over a decade, I've designed control systems for arena tours, programmed generative visuals for Fortune 500 summits, and built bespoke interactive applications that bridge the physical and digital worlds.
+              Há mais de uma década, projeto sistemas de controle para turnês em arenas, programo visuais generativos para summits da Fortune 500 e desenvolvo aplicações interativas sob medida que conectam os mundos físico e digital.
             </p>
             <p>
-              I don't just push buttons; I build the software that controls the buttons. When off-the-shelf software limits the creative vision, I write custom node apps, scripts, and shaders to force the technology to bend to the art.
+              Eu não apenas aperto botões; eu construo o software que controla os botões. Quando um software pronto limita a visão criativa, escrevo node apps, scripts e shaders customizados para fazer a tecnologia se curvar à arte.
             </p>
           </div>
 
           <div className="mt-12 pt-12 border-t border-border grid grid-cols-2 gap-8">
             <div>
               <div className="text-3xl font-bold text-primary mb-2">12+</div>
-              <div className="text-xs font-mono text-muted-foreground uppercase">Years Active</div>
+              <div className="text-xs font-mono text-muted-foreground uppercase">Anos de Atuação</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">500+</div>
-              <div className="text-xs font-mono text-muted-foreground uppercase">Live Shows</div>
+              <div className="text-xs font-mono text-muted-foreground uppercase">Shows Ao Vivo</div>
             </div>
           </div>
         </div>
@@ -377,29 +377,29 @@ function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <h3 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6">
-              READY TO <br/>GO LIVE.
+              PRONTO PARA <br/>ENTRAR AO VIVO.
             </h3>
             <p className="text-primary-foreground/80 text-lg max-w-md mb-12">
-              Available for technical direction, custom software development, and generative visual design.
+              Disponível para direção técnica, desenvolvimento de software customizado e design visual generativo.
             </p>
             
             <a 
               href="mailto:hello@example.com" 
               className="inline-flex items-center gap-4 text-xl font-bold border-b-2 border-primary-foreground pb-2 hover:gap-6 transition-all"
             >
-              TRANSMIT MESSAGE <ChevronRight className="w-6 h-6" />
+              ENVIAR MENSAGEM <ChevronRight className="w-6 h-6" />
             </a>
           </div>
 
           <div className="flex flex-col justify-end">
             <div className="space-y-4 font-mono text-sm text-primary-foreground/70">
               <div className="flex justify-between border-b border-primary-foreground/20 pb-4">
-                <span>LOCATION</span>
+                <span>LOCALIZAÇÃO</span>
                 <span className="text-primary-foreground">LOS ANGELES / GLOBAL</span>
               </div>
               <div className="flex justify-between border-b border-primary-foreground/20 pb-4">
                 <span>STATUS</span>
-                <span className="text-primary-foreground">ACCEPTING Q3 BOOKINGS</span>
+                <span className="text-primary-foreground">ACEITANDO BOOKINGS PARA O Q3</span>
               </div>
               <div className="flex justify-between border-b border-primary-foreground/20 pb-4">
                 <span>COMM</span>
@@ -416,7 +416,7 @@ function Contact() {
 function Footer() {
   return (
     <footer className="py-8 px-6 md:px-12 xl:px-24 bg-background border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-mono text-muted-foreground">
-      <div>© {new Date().getFullYear()} SYS.CTRL. ALL RIGHTS RESERVED.</div>
+      <div>© {new Date().getFullYear()} SYS.CTRL. TODOS OS DIREITOS RESERVADOS.</div>
       <div className="flex gap-6">
         <a href="#" className="hover:text-primary transition-colors">INSTAGRAM</a>
         <a href="#" className="hover:text-primary transition-colors">GITHUB</a>
