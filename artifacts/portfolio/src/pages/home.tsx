@@ -61,17 +61,17 @@ function Hero() {
           <span className="font-mono text-xs text-primary uppercase tracking-widest">System Online</span>
         </motion.div>
         
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="text-5xl md:text-7xl xl:text-8xl font-bold tracking-tighter leading-[1.1] text-foreground"
         >
-          ENGINEERING THE <br/>
+          A MAGIA INVISÍVEL DA <br/>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
-            INVISIBLE MAGIC
+            ENGENHARIA
           </span> <br/>
-          OF LIVE EVENTS.
+          EM EVENTOS AO VIVO.
         </motion.h1>
 
         <motion.p 
@@ -144,7 +144,7 @@ function Projects() {
             <h2 className="text-sm font-mono text-primary mb-4 flex items-center gap-2">
               <Terminal className="w-4 h-4" /> 01 // SELECTED_WORKS
             </h2>
-            <h3 className="text-4xl md:text-5xl font-bold tracking-tight">Signal to Screen.</h3>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight">Do Impulso à Execução.</h3>
           </div>
           <p className="max-w-md text-muted-foreground text-sm">
             From low-level protocol engineering to massive front-of-house visual execution.
@@ -332,7 +332,7 @@ function About() {
             <Radio className="w-4 h-4" /> 04 // PHILOSOPHY
           </h2>
           <h3 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
-            The best technology is felt, not seen.
+            A melhor tecnologia é sentida, não vista.
           </h3>
           
           <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -380,14 +380,14 @@ function Contact() {
               READY TO <br/>GO LIVE.
             </h3>
             <p className="text-primary-foreground/80 text-lg max-w-md mb-12">
-              Available for technical direction, custom software development, and generative visual design.
+              Direção técnica, desenvolvimento de software sob demanda e design visual generativo.
             </p>
             
             <a 
               href="mailto:hello@example.com" 
               className="inline-flex items-center gap-4 text-xl font-bold border-b-2 border-primary-foreground pb-2 hover:gap-6 transition-all"
             >
-              TRANSMIT MESSAGE <ChevronRight className="w-6 h-6" />
+              TRANSMITIR MENSAGEM <ChevronRight className="w-6 h-6" />
             </a>
           </div>
 
@@ -399,7 +399,7 @@ function Contact() {
               </div>
               <div className="flex justify-between border-b border-primary-foreground/20 pb-4">
                 <span>STATUS</span>
-                <span className="text-primary-foreground">ACCEPTING Q3 BOOKINGS</span>
+                <span className="text-primary-foreground">AGENDAMENTOS ABERTOS PARA Q3</span>
               </div>
               <div className="flex justify-between border-b border-primary-foreground/20 pb-4">
                 <span>COMM</span>
